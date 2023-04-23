@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snakegame</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <canvas id ="snake" width="600" height="600"></canvas>
+    <div>
+        
+        <a onclick="directiontouch(38)"><i style="font-size:45px" class="fa fa-chevron-circle-up" aria-hidden="true" style="color: black;"></i></a><br>
+        <a onclick="directiontouch(37)" style="float: left;"><i style="font-size:45px" class="fa fa-chevron-circle-left" aria-hidden="true" style="color: black;"></i></a>
+        <a onclick="directiontouch(39)" style="float: right;"><i style="font-size:45px" class="fa fa-chevron-circle-right" aria-hidden="true" style="color: black;"></i></a><br><br>
+        <a onclick="directiontouch(40)"><i style="font-size:45px" class="fa fa-chevron-circle-down" aria-hidden="true" style="color: black;"></i></a>
+        <p style="color:black; text-align: center;" ><b>🐍 Use the keyboard or buttons on the screen 🐍</b></p>
+    </div>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-footer">
+          <span class="close">&times;</span>
+          <h3>GAME OVER</h3>
+        </div>
+      </div>
+    
+    </div>
+<script src="snakegame.js"></script>
+</body>
+</html>
